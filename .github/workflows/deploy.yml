@@ -27,7 +27,7 @@ jobs:
 
       - name: Test website
         run: |
-          grep -q "Hello DevOps!" index.html
+          grep -q "Hello DevOps student!" index.html
           echo "Website test passed!"
 
       - name: Upload website
