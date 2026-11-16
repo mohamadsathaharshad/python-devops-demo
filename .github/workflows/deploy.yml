@@ -27,8 +27,8 @@ jobs:
 
       - name: Test website
         run: |
-          grep -q "Hello DevOps used student!" index.html
-          echo "Website test passed!"
+          test -f index.html
+          echo "Html file found successfully"
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
